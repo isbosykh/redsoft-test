@@ -1,5 +1,8 @@
 module.exports = {
+    publicPath: process.env.NODE_ENV === 'production'
+        ? '/redsoft-test/'
+        : '/',
     lintOnSave: false,
-    outputDir: "docs",
+    outputDir: 'docs',
     assetsDir: "assets"
 };
